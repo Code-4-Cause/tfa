@@ -238,10 +238,6 @@ a:hover {
   margin-bottom: 15px; /* Reduce space below the image */
 }
   
-@media (max-width: 576px) {
-
-}
-
 /* Support Section */
 .support-section {
     background: url('cc9b89eb1e4ee4f9978497df2b9ec614.jpeg') no-repeat center center/cover;
