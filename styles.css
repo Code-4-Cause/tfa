@@ -238,6 +238,39 @@ a:hover {
   margin-bottom: 15px; /* Reduce space below the image */
 }
   
+@media (max-width: 576px) {
+  /* Ensure images become larger on smaller screens */
+  img {
+    width: 100%; /* Full width of the container */
+    height: auto; /* Maintain aspect ratio */
+    max-width: none; /* Remove any max-width restrictions */
+  }
+
+  .about-section img {
+    width: 90%; /* Increase size in about section */
+    margin: 0 auto 20px auto; /* Center image and add spacing */
+  }
+
+  .card img {
+    width: 100%; /* Make card images full width */
+    margin-bottom: 20px; /* Add space below images */
+  }
+
+  .hero {
+    background-size: contain; /* Adjust hero background for small screens */
+  }
+
+  .logo img {
+    width: 60px; /* Slightly larger logo for visibility */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .social-links a img {
+    width: 50px; /* Increase social icon size */
+    height: 50px;
+  }
+}
+
 /* Support Section */
 .support-section {
     background: url('cc9b89eb1e4ee4f9978497df2b9ec614.jpeg') no-repeat center center/cover;
