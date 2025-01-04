@@ -1,0 +1,376 @@
+/* Global Styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+  font-family: 'Open Sans', sans-serif;
+}
+
+button {
+  background-color: #354F7E;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #354F7E;
+}
+
+a {
+  text-decoration: none;
+  color: #354F7E;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Full viewport height */
+  width: 100%; /* Full width */
+  background: url('03b513d204f82809a81aea47c2ea00c0.jpeg') no-repeat center center;
+  background-size: cover; /* Ensure the image covers the entire section */
+  color: #ffffff;
+  text-align: center;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden; /* Prevent overflow */
+}
+
+.hero-content .learn-more:hover {
+  background-color: #4A6BA8; /* A lighter shade of blue */
+}
+
+.learn-more:hover {
+  background-color: #4A6BA8; /* A lighter shade of blue */
+}
+
+/* Navigation Bar */
+.nav-bar {
+  display: flex;
+  justify-content: space-between; /* Spread logo and menu */
+  align-items: center; /* Align items vertically */
+  width: 100%;
+  padding: 20px 30px; /* Increase padding for taller appearance */
+  position: absolute; /* Positioned on top of the banner */
+  top: 0;
+  left: 0;
+  background-color: #2C2C2C; /* Dark gray background */
+  z-index: 10;
+  box-sizing: border-box;
+  height: 80px; /* Explicit height if needed */
+}
+
+.nav-bar .logo img {
+  width: 50px; /* Adjust logo size */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 50%; /* Make the logo circular */
+  margin-right: 10px; /* Add spacing between logo and text */
+}
+
+.nav-bar .menu {
+  display: flex;
+  gap: 20px; /* Add space between menu items */
+  align-items: center;
+}
+
+.nav-bar .menu a {
+  color: #ffffff; /* White links */
+  text-decoration: none;
+  font-size: 1rem; /* Adjust font size */
+  padding: 5px 10px; /* Add padding for clickable area */
+  border-radius: 5px; /* Optional rounded corners */
+  transition: background-color 0.3s; /* Smooth hover effect */
+}
+
+.nav-bar .menu a:hover {
+  background-color: #444444; /* Slightly lighter gray on hover */
+}
+
+.nav-bar .sign-up {
+  background-color: transparent; /* No background color */
+  color: #000000; /* Black text by default */
+  padding: 5px 15px; /* Adjust padding */
+  font-size: 1rem; /* Match menu font size */
+  border: 2px solid #000000; /* Optional: Add a border for visibility */
+  border-radius: 20px; /* Rounded pill-like shape */
+  text-decoration: none; /* Remove underline for link behavior */
+  font-weight: bold; /* Make text bold */
+  transition: color 0.3s, background-color 0.3s; /* Smooth transition for color changes */
+}
+
+.nav-bar .sign-up:active {
+  color: #ffffff; /* White text when clicked */
+  background-color: #000000; /* Black background when clicked */
+}
+
+.nav-bar .sign-up:hover {
+  color: #ffffff; /* White text on hover */
+  background-color: #000000; /* Optional: Black background on hover */
+}
+
+/* Hero Content */
+.hero-content {
+  z-index: 5; /* Ensure content appears above background */
+  margin-top: 60px; /* Avoid overlapping with nav-bar */
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem; /* Large headline */
+  margin: 20px 0;
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  margin: 10px 0 30px;
+}
+
+.hero-content .learn-more {
+  background-color: #354F7E; /* Blue button */
+  border: none;
+  color: #ffffff;
+  padding: 15px 30px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-content h1 {
+      font-size: 2.5rem;
+  }
+
+  .hero-content p {
+      font-size: 1.2rem;
+  }
+
+  .nav-bar .menu a {
+      font-size: 0.9rem;
+  }
+}
+
+  .logo img {
+    width: 80px; /* Adjust size */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 30px;
+  }
+  
+  /* About Section */
+  .about-section {
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    background-color: #f8f8f8;
+  }
+  
+  .about-section img {
+    width: 50%;
+    border-radius: 40px;
+    margin-right: 20px;
+  }
+  
+  .about-section .about-content {
+    max-width: 50%;
+  }
+  
+  .about-section h2 {
+    font-size: 2rem;
+  }
+  
+  .about-section p {
+    margin: 20px 0;
+  }
+  
+  .section-separator {
+    border: none; /* Removes the default line style */
+    height: 2px; /* Sets the height of the separator */
+    background-color: #226733; /* Matches the green theme */
+    margin: 10px 0; /* Adds spacing above and below the separator */
+    width: 80%; /* Centers the separator */
+    margin-left: auto; 
+    margin-right: auto;
+  }
+
+  /* Cards Section */
+  .cards-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+    background-color: #f8f8f8; /* Change from blue to white */
+    color: #383737; /* Adjust text color for better contrast on white background */
+}
+  
+.card {
+  background-color: #226733;
+  padding: 15px;
+  border-radius: 41px;
+  width: 35%; /* Adjusted for smaller boxes */
+  text-align: center;
+  margin: 10px;
+}
+
+.card h3 {
+  color: #000000; /* Black text for headers */
+  font-size: 1.5rem;
+}
+
+.card p {
+  color: #ffffff; /* White text for paragraphs */
+  font-size: 1rem;
+  margin: 20px 0;
+}
+
+.card img {
+  width: 80%; /* Reduce the image width */
+  border-radius: 27px; /* Maintain rounded corners */
+  margin-bottom: 15px; /* Reduce space below the image */
+}
+  
+/* Support Section */
+.support-section {
+    background: url('cc9b89eb1e4ee4f9978497df2b9ec614.jpeg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 110px 90px;
+  }
+  
+.learn-more {
+  background-color: #354F7E;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.learn-more:hover {
+  background-color: #354F7E;
+}
+
+  .support-section .support-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .support-section .support-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Impact Section */
+  .impact-section {
+    background-color: #ffffff;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .impact-section h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+  
+  .impact-numbers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .impact-item {
+    background-color: #f8f8f8;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 20px;
+    width: 150px;
+    text-align: center;
+  }
+  
+  .impact-item h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+  
+  /* Subscribe Section */
+  .subscribe-section {
+    background-color: #354F7E;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  .subscribe-section h2 {
+    font-size: 1.8rem;
+  }
+  
+  .subscribe-section p {
+    margin-bottom: 20px;
+  }
+  
+  .subscribe-section form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .subscribe-section input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .subscribe-section button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #003378;
+    color: white;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .subscribe-section button:hover {
+    background-color: #00224e;
+  }
+  
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 10px;
+  }
+  
+  .social-links a img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .footer-note {
+    font-size: 0.8rem;
+  }
+
+/* Default hidden state */
+.hidden {
+  opacity: 0;
+  transform: translateX(-50px); /* Starts slightly to the left */
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+/* Visible state */
+.animate {
+  opacity: 1;
+  transform: translateX(0); /* Returns to its normal position */
+}
